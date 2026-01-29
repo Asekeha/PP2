@@ -1,0 +1,12 @@
+x="hello"
+y=5
+z="5"
+w=5.0
+e=True
+q=[1,2,3,4,5]
+print(type(x))
+print(type(y))
+print(type(z))
+print(type(w))
+print(type(e))
+print(type(q))
