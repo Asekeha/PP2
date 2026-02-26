@@ -1,46 +1,38 @@
-# Math and random operations
-x = min(5, 10, 25)
-y = max(5, 10, 25)
+#1
+import math
 
-print(x)
-print(y)
+degree = float(input("Input degree: "))
+radian = degree * (math.pi / 180)
+
+print("Output radian:", round(radian, 6))
 
 #2
+height = float(input("Height: "))
+base1 = float(input("Base, first value: "))
+base2 = float(input("Base, second value: "))
 
-lenght = float(input())
-height = float(input())
+area = ((base1 + base2) / 2) * height
 
-area = lenght * height
-print(area)
+print("Expected Output:", area)
 
 #3
-
 import math
 
-x = math.sqrt(64)
+n = int(input("Input number of sides: "))
+s = float(input("Input the length of a side: "))
 
-print(x)
+area = (n * s * s) / (4 * math.tan(math.pi / n))
+
+print("The area of the polygon is:", round(area))
+
 
 #4
+base = float(input("Length of base: "))
+height = float(input("Height of parallelogram: "))
 
-#Import math library
-import math
+area = base * height
 
-#Round a number upward to its nearest integer
-x = math.ceil(1.4)
-
-#Round a number downward to its nearest integer
-y = math.floor(1.4)
-
-print(x)
-print(y)
-
-#5
-
-import math
-height = int(input())
-a = float(input())
-b = float(input())
+print("Expected Output:", area)
 
 area = (a+b)/2 * height
 print(area)
