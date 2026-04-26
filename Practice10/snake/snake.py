@@ -16,8 +16,8 @@ class Food:
 
     def random_pos(self):
         # Pick random x/y inside 25x25 grid (0..24)
-        self.pos_x = random.randint(0,24)
-        self.pos_y = random.randint(0,24)
+        self.pos_x = random.randint(0,25)
+        self.pos_y = random.randint(0,25)
 
         # Return generated coordinates as tuple
         return self.pos_x,self.pos_y

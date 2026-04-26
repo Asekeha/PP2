@@ -8,11 +8,11 @@ class MickeyClock:
         self.center=(300, 300)
 
         # Load and resize background image
-        self.bg=pygame.image.load("mickeys_clock/images/clock_bg.png").convert()
+        self.bg=pygame.image.load("practice09/mickeys_clock/images/clock_bg.png").convert()
         self.bg=pygame.transform.scale(self.bg, (600, 600))
 
         # Load and resize hand image (used for both minute/second hands)
-        self.hand=pygame.image.load("mickeys_clock/images/mickey_hand.png").convert_alpha()
+        self.hand=pygame.image.load("practice09/mickeys_clock/images/mickey_hand.png").convert_alpha()
         self.hand=pygame.transform.scale(self.hand, (260, 260))
 
     def get_time(self):
